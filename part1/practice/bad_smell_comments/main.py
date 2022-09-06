@@ -6,7 +6,7 @@
 
 
 class Unit:
-    def mvmntobjbflyd(self, field, x, y, direction, fly, crawl, speed = 1):
+    def move(self, field, x, y, direction, fly, crawl, speed=1):
         """Функция реализует перемещение юнита по полю"""
         if fly and crawl:
             raise ValueError('Рожденный ползать летать не должен!')
@@ -41,4 +41,5 @@ class Unit:
 
             field.set_unit(x=new_x, y=new_y, unit=self)
 
-#     ...
+
+data = {'mark': 'tiddly'}
